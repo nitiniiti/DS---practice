@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\doublyLinkedList.js"
+            "program": "${workspaceFolder}\\udemy-Algo-DS/exercises/reversestring/index.js"
         }
     ]
 }
