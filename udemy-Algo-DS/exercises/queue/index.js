@@ -8,6 +8,17 @@
 //     q.add(1);
 //     q.remove(); // returns 1;
 
-class Queue {}
+class Queue {
+    queue = [];
+
+    add = (element) => {
+        this.queue.push(element);
+        return element + " Added";
+    }
+
+    remove = () => {
+        return this.queue.shift();
+    }
+}
 
 module.exports = Queue;

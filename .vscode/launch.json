@@ -8,7 +8,10 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\udemy-Algo-DS/exercises/reversestring/index.js"
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\udemy-Algo-DS\\exercises\\pyramid\\index.js"
         }
     ]
 }

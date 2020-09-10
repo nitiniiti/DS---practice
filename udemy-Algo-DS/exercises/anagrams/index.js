@@ -8,6 +8,21 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {}
+function anagrams(stringA, stringB) {
+    stringA = stringA.replace(/[^\w]/g, "").toLowerCase();
+    stringB = stringB.replace(/[^\w]/g, "").toLowerCase();
+    let anagram = true;
+    if (stringA.length != stringB.length) {
+        anagram = false;
+    } else {
+        for (let i = 0; i < stringA.length; i++) {
+            if (stringB.indexOf(stringA[i]) < 0) {
+                anagram = false;
+            }
+        }
+    }
+    return anagram;
+
+}
 
 module.exports = anagrams;
